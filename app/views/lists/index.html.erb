@@ -1,0 +1,8 @@
+<h1>Welcome to watch list</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %></li>
+  <% end %>
+  <%= link_to "Create a list", list_path %>
+</ul>
